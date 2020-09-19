@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Row, Col, Container } from 'reactstrap';
 
-import stock1 from '../../../assets/images/stock-photos/stock-6.jpg';
-import stock2 from '../../../assets/images/stock-photos/stock-7.jpg';
+import stock1 from '../../assets/images/stock-photos/stock-6.jpg';
+import stock2 from '../../assets/images/stock-photos/stock-7.jpg';
 
 export default function LivePreviewExample() {
   return (

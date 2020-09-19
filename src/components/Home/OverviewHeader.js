@@ -2,19 +2,10 @@ import React, { useState } from 'react';
 
 import clsx from 'clsx';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  Row,
-  Col,
-  Collapse,
-  TabContent,
-  TabPane,
-  Nav,
-  NavItem,
   Button
 } from 'reactstrap';
-import { NavLink as NavLinkStrap } from 'reactstrap';
-import projectLogo from '../../../assets/images/react.svg';
+import projectLogo from '../../assets/images/react.svg';
 import { NavLink } from 'react-router-dom';
 
 export default function LivePreviewExample() {

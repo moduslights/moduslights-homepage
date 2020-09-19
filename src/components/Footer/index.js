@@ -3,7 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, Container, Nav, NavItem } from 'reactstrap';
 import { NavLink as NavLinkStrap } from 'reactstrap';
-import projectLogo from '../../../assets/images/react.svg';
+import projectLogo from '../../assets/images/react.svg';
 
 export default function LivePreviewExample() {
   return (

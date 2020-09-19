@@ -5,8 +5,8 @@ import { Row, Col, Container, Button } from 'reactstrap';
 
 import { NavLink } from 'react-router-dom';
 
-import particles2 from '../../../assets/images/hero-bg/particles-2.svg';
-import hero1 from '../../../assets/images/hero-bg/hero-1.jpg';
+import particles2 from '../../assets/images/hero-bg/particles-2.svg';
+import hero1 from '../../assets/images/hero-bg/hero-1.jpg';
 
 import OverviewHeader from './OverviewHeader.js';
 

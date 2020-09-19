@@ -5,9 +5,9 @@ import { Row, Col, Card, Container, Badge, Button } from 'reactstrap';
 import GaugeChart from 'react-gauge-chart';
 import { NavLink } from 'react-router-dom';
 
-import general from '../../../assets/images/apps/bamburgh-react-admin-dashboard-reactstrap-pro.jpg';
+import general from '../../assets/images/apps/bamburgh-react-admin-dashboard-reactstrap-pro.jpg';
 
-import hero1 from '../../../assets/images/hero-bg/hero-5.jpg';
+import hero1 from '../../assets/images/hero-bg/hero-5.jpg';
 
 import { Bell } from 'react-feather';
 

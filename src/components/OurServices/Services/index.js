@@ -3,10 +3,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, Card, Container } from 'reactstrap';
 
-import logo1 from '../../../../assets/images/stock-logos/microsoft-icon.svg';
-import logo2 from '../../../../assets/images/stock-logos/google-icon.svg';
-import logo3 from '../../../../assets/images/stock-logos/spotify-icon.svg';
-import logo4 from '../../../../assets/images/stock-logos/instagram-icon.svg';
+import logo1 from '../../../assets/images/stock-logos/microsoft-icon.svg';
+import logo2 from '../../../assets/images/stock-logos/google-icon.svg';
+import logo3 from '../../../assets/images/stock-logos/spotify-icon.svg';
+import logo4 from '../../../assets/images/stock-logos/instagram-icon.svg';
 
 export default function LivePreviewExample() {
   return (
