@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, Container, Nav, NavItem } from 'reactstrap';
 import { NavLink as NavLinkStrap } from 'reactstrap';
 import projectLogo from '../../assets/images/react.svg';
+import logoWithoutNameTransparentBg from '../../assets/images/ModusLightsLogoOnlyTransparentBg.jpg'
 
 export default function LivePreviewExample() {
   return (
@@ -18,7 +19,7 @@ export default function LivePreviewExample() {
             <img
               alt="Bamburgh React Admin Dashboard with Reactstrap PRO"
               className="img-fluid p-2"
-              src={projectLogo}
+              src={logoWithoutNameTransparentBg}
             />
           </a>
         </div>

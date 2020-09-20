@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import clsx from 'clsx';
 
@@ -6,6 +7,9 @@ import {
   Button
 } from 'reactstrap';
 import projectLogo from '../../assets/images/react.svg';
+import logoWithName from '../../assets/images/ModusLightslogoEnhanced.png'
+import logoWithoutNameTransparentBg from '../../assets/images/ModusLightsLogoOnlyTransparentBg.jpg'
+
 import { NavLink } from 'react-router-dom';
 
 export default function LivePreviewExample() {
@@ -18,18 +22,20 @@ export default function LivePreviewExample() {
   const [collapse, setCollapse] = useState(false);
   const toggle = () => setCollapse(!collapse);
 
+
   return (
     <>
       <div className="header-nav-wrapper header-nav-wrapper-lg navbar-dark">
         <div className="app-nav-logo">
           <NavLink
-            to="/Overview"
+            to="/"
             title="Bamburgh React Admin Dashboard with Reactstrap PRO"
             className="app-nav-logo app-nav-logo--light">
             <div className="app-nav-logo--icon rounded-lg shadow-second-sm bg-secondary border-0">
               <img
-                alt="Bamburgh React Admin Dashboard with Reactstrap PRO"
-                src={projectLogo}
+              style={{width: '25'}}
+                alt="Moduslights Logo"
+                src={logoWithoutNameTransparentBg}
               />
             </div>
             <div className="app-nav-logo--text">
@@ -48,21 +54,46 @@ export default function LivePreviewExample() {
                 Home
               </a>
             </li>
-            <li>
-              <a
-                className="rounded text-white font-weight-bold"
-                href="/#service"
-                onClick={(e) => e.preventDefault()}>
-                Service
-              </a>
+            <li style={{cursor: 'pointer'}}>
+              
+                  <Link
+                  className="rounded text-white font-weight-bold"
+                to="section2"
+                activeClass="active"
+                smooth={true}
+
+            > 
+            Service
+            </Link>
+                
             </li>
-            <li>
-              <a
-                className="rounded text-white font-weight-bold"
-                href="#/"
-                onClick={(e) => e.preventDefault()}>
-                Contact
-              </a>
+
+            <li style={{cursor: 'pointer'}}>
+              
+                  <Link
+                  className="rounded text-white font-weight-bold"
+                to="section4"
+                activeClass="active"
+                smooth={true}
+
+            > 
+            Our Values
+            </Link>
+                
+            </li>
+
+            <li style={{cursor: 'pointer'}}>
+              
+                  <Link
+                  className="rounded text-white font-weight-bold"
+                to="section5"
+                activeClass="active"
+                smooth={true}
+
+            > 
+            Contact
+            </Link>
+                
             </li>
           </ul>
         </div>
