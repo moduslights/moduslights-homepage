@@ -36,14 +36,6 @@ export default function LivePreviewExample() {
                       href="#/"
                       onClick={(e) => e.preventDefault()}
                       className="px-0 py-1 text-white-50">
-                      Products
-                    </NavLinkStrap>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinkStrap
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}
-                      className="px-0 py-1 text-white-50">
                       Services
                     </NavLinkStrap>
                   </NavItem>
@@ -69,7 +61,7 @@ export default function LivePreviewExample() {
                       href="#/"
                       onClick={(e) => e.preventDefault()}
                       className="px-0 py-1 text-white-50">
-                      Support center
+                      support@moduslights.com
                     </NavLinkStrap>
                   </NavItem>
                   <NavItem>
@@ -77,15 +69,7 @@ export default function LivePreviewExample() {
                       href="#/"
                       onClick={(e) => e.preventDefault()}
                       className="px-0 py-1 text-white-50">
-                      Affiliates
-                    </NavLinkStrap>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinkStrap
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}
-                      className="px-0 py-1 text-white-50">
-                      Contact us
+                      +1-617-785-5095
                     </NavLinkStrap>
                   </NavItem>
                 </Nav>
@@ -113,14 +97,6 @@ export default function LivePreviewExample() {
                       Generic
                     </NavLinkStrap>
                   </NavItem>
-                  <NavItem>
-                    <NavLinkStrap
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}
-                      className="px-0 py-1 text-white-50">
-                      Helpdesk
-                    </NavLinkStrap>
-                  </NavItem>
                 </Nav>
               </div>
             </Col>
@@ -130,7 +106,7 @@ export default function LivePreviewExample() {
                   Social Connections
                 </h6>
                 <p className="text-white-50">
-                  Stay up to date with our latest updates and releases!
+                  Stay up to date with our latest News and products releases!
                 </p>
                 <Nav className="nav-transparent justify-content-start">
                   <NavItem>
@@ -183,38 +159,10 @@ export default function LivePreviewExample() {
           </Row>
           <div className="divider mt-4 bg-white opacity-2" />
           <div className="divider mb-4 bg-white opacity-2" />
-          <div className="py-3 d-block d-lg-flex align-items-center justify-content-between">
+          <div className="py-3 d-block d-lg-flex align-items-center justify-content-center">
             <div className="text-center d-block mb-3 mb-md-0 text-white">
-              Copyright &copy; 2020 - UiFort.com
+              Copyright &copy; 2020 - Moduslights
             </div>
-            <Nav className="nav-transparent justify-content-center">
-              <NavItem>
-                <NavLinkStrap
-                  className="text-white-50"
-                  href="#/"
-                  onClick={(e) => e.preventDefault()}>
-                  Privacy Policy
-                </NavLinkStrap>
-              </NavItem>
-              <NavItem>
-                <NavLinkStrap
-                  className="text-white-50"
-                  href="#/"
-                  onClick={(e) => e.preventDefault()}>
-                  Terms of Service
-                </NavLinkStrap>
-              </NavItem>
-            </Nav>
-            <Nav className="nav-transparent justify-content-center">
-              <NavItem>
-                <NavLinkStrap
-                  className="text-white-50"
-                  href="#/"
-                  onClick={(e) => e.preventDefault()}>
-                  My Account
-                </NavLinkStrap>
-              </NavItem>
-            </Nav>
           </div>
         </Container>
       </div>

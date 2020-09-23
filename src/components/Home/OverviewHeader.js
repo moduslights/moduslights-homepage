@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-scroll';
 
 import clsx from 'clsx';
 
-import {
-  Button
-} from 'reactstrap';
-import projectLogo from '../../assets/images/react.svg';
-import logoWithName from '../../assets/images/ModusLightslogoEnhanced.png'
-import logoWithoutNameTransparentBg from '../../assets/images/ModusLightsLogoOnlyTransparentBg.jpg'
+import { Button } from 'reactstrap';
+
+import logoWithoutNameTransparentBg from '../../assets/images/ModusLightsLogoOnlyTransparentBg.jpg';
 
 import { NavLink } from 'react-router-dom';
 
@@ -22,7 +19,6 @@ export default function LivePreviewExample() {
   const [collapse, setCollapse] = useState(false);
   const toggle = () => setCollapse(!collapse);
 
-
   return (
     <>
       <div className="header-nav-wrapper header-nav-wrapper-lg navbar-dark">
@@ -33,14 +29,13 @@ export default function LivePreviewExample() {
             className="app-nav-logo app-nav-logo--light">
             <div className="app-nav-logo--icon rounded-lg shadow-second-sm bg-secondary border-0">
               <img
-              style={{width: '25'}}
+                style={{ width: '25' }}
                 alt="Moduslights Logo"
                 src={logoWithoutNameTransparentBg}
               />
             </div>
             <div className="app-nav-logo--text">
-
-              <b style={{textTransform: 'uppercase'}}>MODUSLIGHTS</b>
+              <b style={{ textTransform: 'uppercase' }}>MODUSLIGHTS</b>
             </div>
           </NavLink>
         </div>
@@ -54,60 +49,54 @@ export default function LivePreviewExample() {
                 Home
               </a>
             </li>
-            <li style={{cursor: 'pointer'}}>
-              
-                  <Link
-                  className="rounded text-white font-weight-bold"
+            <li style={{ cursor: 'pointer' }}>
+              <Link
+                className="rounded text-white font-weight-bold"
                 to="section2"
                 activeClass="active"
-                smooth={true}
-
-            > 
-            Service
-            </Link>
-                
+                smooth={true}>
+                Service
+              </Link>
             </li>
 
-            <li style={{cursor: 'pointer'}}>
-              
-                  <Link
-                  className="rounded text-white font-weight-bold"
+            <li style={{ cursor: 'pointer' }}>
+              <Link
+                className="rounded text-white font-weight-bold"
                 to="section4"
                 activeClass="active"
-                smooth={true}
-
-            > 
-            Our Values
-            </Link>
-                
+                smooth={true}>
+                Our Values
+              </Link>
             </li>
 
-            <li style={{cursor: 'pointer'}}>
-              
-                  <Link
-                  className="rounded text-white font-weight-bold"
+            <li style={{ cursor: 'pointer' }}>
+              <Link
+                className="rounded text-white font-weight-bold"
                 to="section5"
                 activeClass="active"
-                smooth={true}
-
-            > 
-            Contact
-            </Link>
-                
+                smooth={true}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
         <div className="header-nav-actions flex-grow-0 flex-lg-grow-1">
           <span className="d-none d-lg-block">
-            <Button
-              tag="a"
-              href="https://uifort.com/template/bamburgh-react-admin-dashboard-reactstrap-pro"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="rounded-lg text-nowrap font-size-sm text-uppercase shadow-second-sm"
-              color="success">
-              Hire Us
-            </Button>
+            <Link
+              className="rounded text-white font-weight-bold"
+              to="section5"
+              activeClass="active"
+              smooth={true}>
+              <Button
+                tag="Link"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="rounded-lg text-nowrap font-size-sm text-uppercase shadow-second-sm"
+                color="success">
+                Hire Us
+              </Button>
+            </Link>
           </span>
           <span className="d-block d-lg-none">
             <button

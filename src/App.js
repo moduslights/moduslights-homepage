@@ -130,11 +130,13 @@ import {
   faArrowLeft,
   faStar,
   faSignOutAlt,
-  faLink
+  faLink,
+  faMobile
 } from '@fortawesome/free-solid-svg-icons';
 library.add(
   far,
   faSquare,
+  faMobile,
   faLifeRing,
   faCheckCircle,
   faTimesCircle,

@@ -11,30 +11,12 @@ import Section from 'components/Home/Section';
 export default function Overview() {
   return (
     <>
-        <Section
-          component = {Home}
-          id="section1"
-        />
-        <Section
-          component = {OurServices}
-          id="section2"
-        />
-        <Section
-          component = {Development}
-          id="section3"
-        />
-        <Section
-          component = {OurValues}
-          id="section4"
-        />
-        <Section
-        component={OurExperiences}
-        id="section6"
-        />
-        <Section
-          component = {ContactForm}
-          id="section5"
-        />
+      <Section component={Home} id="section1" />
+      <Section component={OurServices} id="section2" />
+      <Section component={Development} id="section3" />
+      <Section component={OurValues} id="section4" />
+      <Section component={OurExperiences} id="section6" />
+      <Section component={ContactForm} id="section5" />
       <Footer />
     </>
   );

@@ -46,9 +46,9 @@ export default function LivePreviewExample() {
           <h1 className="display-3 text-black mb-2 font-weight-bold">
             Our Experiences
           </h1>
-          {/* <p className="font-size-xl mb-0 mb-lg-5 text-black-50">
-            At ModusLights, we offer a wide range of both business and technology solutions to our clients. Some of our core competencies includes the below to to mention a few.
-          </p> */}
+          <p className="font-size-xl mb-0 mb-lg-5 text-black-50">
+            Our team members has executed for top companies around the world.
+          </p>
         </div>
         <Services />
       </Container>

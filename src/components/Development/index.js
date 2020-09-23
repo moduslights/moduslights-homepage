@@ -5,7 +5,9 @@ import { Row, Col, Card, Container, Badge, Button } from 'reactstrap';
 import GaugeChart from 'react-gauge-chart';
 import { NavLink } from 'react-router-dom';
 
-import general from '../../assets/images/apps/bamburgh-react-admin-dashboard-reactstrap-pro.jpg';
+//import general from '../../assets/images/apps/bamburgh-react-admin-dashboard-reactstrap-pro.jpg';
+import general from '../../assets/images/apps/devComputer.jpg';
+
 
 import hero1 from '../../assets/images/hero-bg/hero-5.jpg';
 
@@ -44,16 +46,11 @@ export default function LivePreviewExample() {
               </div>
               <Row>
                 <Col md="6">
-                  <div className="card shadow-sm-dark rounded-lg bg-transparent">
+                  <div className="card shadow-sm-dark rounded-xlg bg-transparent">
                     <div className="card-img-wrapper">
-                      <div className="card-badges card-badges-bottom">
-                        <div className="badge badge-pill h-auto py-1 px-3 badge-success shadow-xxl">
-                          Active
-                        </div>
-                      </div>
                       <img
                         src={general}
-                        className="rounded-lg img-fluid"
+                        className="rounded-lg  img-fit-container"
                         alt="..."
                       />
                     </div>
