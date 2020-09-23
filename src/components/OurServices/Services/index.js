@@ -7,6 +7,15 @@ import logo1 from '../../../assets/images/stock-logos/microsoft-icon.svg';
 import logo2 from '../../../assets/images/stock-logos/google-icon.svg';
 import logo3 from '../../../assets/images/stock-logos/spotify-icon.svg';
 import logo4 from '../../../assets/images/stock-logos/instagram-icon.svg';
+import { icon, library } from '@fortawesome/fontawesome-svg-core';
+import { faCamera, faLaptopCode, faPeopleArrows, faWifi, faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faCamera, faLaptopCode, faPeopleArrows, faWifi, faChalkboardTeacher);
+
+const laptop = icon({ prefix: 'fas', iconName: 'laptop-code' });
+const people = icon({ prefix: 'fas', iconName: 'people-arrows' });
+const wifi = icon({ prefix: 'fas', iconName: 'wifi' });
+const teacher = icon({ prefix: 'fas', iconName: 'chalkboard-teacher' });
 
 export default function LivePreviewExample() {
   return (
@@ -18,7 +27,7 @@ export default function LivePreviewExample() {
               <div className="d-flex py-5">
                 <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
                   <div className="d-40">
-                    <img alt="..." className="img-fit-container" src={logo1} />
+                    <FontAwesomeIcon icon={people} size="2x" color="orange"/>
                   </div>
                 </div>
                 <div className="pt-2 pl-4">
@@ -35,8 +44,9 @@ export default function LivePreviewExample() {
                     </div>
                   </a>
                   <p className="mb-0 text-second opacity-7">
-                    IT Service Management (ITSM) / Information Technology Infrastructural Library (ITIL),
-                    Agile / Scrum Methodologies Quality Assurance (QA) Security
+                    IT Service Management (ITSM) / Information Technology
+                    Infrastructural Library (ITIL), Agile / Scrum Methodologies
+                    Quality Assurance (QA) Security
                   </p>
                 </div>
               </div>
@@ -45,7 +55,7 @@ export default function LivePreviewExample() {
               <div className="d-flex py-5">
                 <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
                   <div className="d-40">
-                    <img alt="..." className="img-fit-container" src={logo2} />
+                    <FontAwesomeIcon icon={laptop} size="2x" color="orange"/>
                   </div>
                 </div>
                 <div className="pt-2 pl-4">
@@ -62,7 +72,8 @@ export default function LivePreviewExample() {
                     </div>
                   </a>
                   <p className="mb-0 text-second opacity-7">
-                    Our team offers Web applications and Mobile - Android and iOS development
+                    Our team offers Web applications and Mobile - Android and
+                    iOS development
                   </p>
                 </div>
               </div>
@@ -71,7 +82,7 @@ export default function LivePreviewExample() {
               <div className="d-flex py-5">
                 <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
                   <div className="d-40">
-                    <img alt="..." className="img-fit-container" src={logo3} />
+                    <FontAwesomeIcon icon={teacher} size="2x" color="orange"/>
                   </div>
                 </div>
                 <div className="pt-2 pl-4">
@@ -88,7 +99,8 @@ export default function LivePreviewExample() {
                     </div>
                   </a>
                   <p className="mb-0 text-second opacity-7">
-                    ModusLights offers extensive training and support to its customers all over the world.
+                    ModusLights offers extensive training and support to its
+                    customers all over the world.
                   </p>
                 </div>
               </div>
@@ -97,7 +109,7 @@ export default function LivePreviewExample() {
               <div className="d-flex py-5">
                 <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
                   <div className="d-40">
-                    <img alt="..." className="img-fit-container" src={logo4} />
+                    <FontAwesomeIcon icon={wifi} size="2x" color="orange"/>
                   </div>
                 </div>
                 <div className="pt-2 pl-4">
@@ -105,7 +117,10 @@ export default function LivePreviewExample() {
                     href="#/"
                     onClick={(e) => e.preventDefault()}
                     className="font-weight-bold d-flex align-items-center mb-2 d-flex">
-                    <div className="font-size-lg"> Internet of Things (IoT) </div>
+                    <div className="font-size-lg">
+                      {' '}
+                      Internet of Things (IoT){' '}
+                    </div>
                     <div className="d-30 rounded-pill btn-icon bg-neutral-success font-size-xs text-success ml-2">
                       <FontAwesomeIcon
                         icon={['fas', 'check']}

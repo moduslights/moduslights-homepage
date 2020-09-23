@@ -11,9 +11,9 @@ import general from '../../assets/images/apps/devComputer.jpg';
 
 import hero1 from '../../assets/images/hero-bg/hero-5.jpg';
 
-import { Bell } from 'react-feather';
-
 export default function LivePreviewExample() {
+
+
   return (
     <>
       <div className="hero-wrapper bg-deep-blue bg-composed-wrapper">
