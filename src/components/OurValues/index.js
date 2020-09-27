@@ -20,7 +20,7 @@ export default function LivePreviewExample() {
             </p>
           </div>
           <Row className="no-gutters">
-            <Col xl="6" className="overflow-hidden d-flex">
+            <Col md="6" className="overflow-hidden d-flex">
               <a
                 href="#/"
                 onClick={(e) => e.preventDefault()}
@@ -28,7 +28,7 @@ export default function LivePreviewExample() {
                 <img src={stock1} className="img-fit-container" alt="..." />
               </a>
             </Col>
-            <Col xl="6" className="bg-second d-flex align-items-center text-white">
+            <Col md="6" className="bg-second d-flex align-items-center text-white">
               <div className="p-4 p-lg-5">
                 <div className="hover-scale-rounded">
                   <h1 className="display-4 font-weight-bold mb-4">
@@ -49,7 +49,7 @@ export default function LivePreviewExample() {
               </div>
             </Col>
             <Col
-              xl="6"
+              md="6"
               className="bg-second d-flex align-items-center text-white">
               <div className="p-4 text-center p-lg-5">
                 <div className="hover-scale-rounded">
@@ -66,7 +66,7 @@ export default function LivePreviewExample() {
                 </div>
               </div>
             </Col>
-            <Col xl="6" className="overflow-hidden d-flex">
+            <Col md="6" className="overflow-hidden d-flex">
               <a
                 href="#/"
                 onClick={(e) => e.preventDefault()}

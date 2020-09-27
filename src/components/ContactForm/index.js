@@ -149,7 +149,7 @@ export default function LivePreviewExample() {
                       </p>
                       <p className="mb-0 text-black-50">
                         <span className="text-black  font-size-lg mb-1">Email: </span>
-                        info@moduslights.com
+                        support@moduslights.com
                       </p>
                       <p className="mb-0 text-black-50">
                         <span className="text-black  font-size-lg mb-1">Phone: </span>

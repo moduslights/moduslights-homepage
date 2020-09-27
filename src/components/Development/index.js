@@ -58,7 +58,7 @@ export default function LivePreviewExample() {
                 </Col>
                 <Col md="6">
                   <Row className="w-100 mb-3 mb-xl-0">
-                    <Col lg="6" xl="12">
+                    <Col md="12" xl="12">
                       <div className="feature-box pr-4 text-white">
                         <h3 className="font-size-lg font-weight-bold my-3 text-white opacity-6">
                           <a
@@ -79,7 +79,7 @@ export default function LivePreviewExample() {
                         </p>
                       </div>
                     </Col>
-                    <Col lg="6" xl="12">
+                    <Col md="12" xl="12">
                       <div className="feature-box pr-4">
                         <h3 className="font-size-lg font-weight-bold my-3 opacity-6">
                           <a
