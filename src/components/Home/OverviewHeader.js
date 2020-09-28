@@ -25,7 +25,7 @@ export default function LivePreviewExample() {
         <div className="app-nav-logo">
           <NavLink
             to="/"
-            title="Bamburgh React Admin Dashboard with Reactstrap PRO"
+            title="Moduslights"
             className="app-nav-logo app-nav-logo--light">
             <div className="app-nav-logo--icon rounded-lg shadow-second-sm bg-secondary border-0">
               <img

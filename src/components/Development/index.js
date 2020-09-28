@@ -30,7 +30,7 @@ export default function LivePreviewExample() {
                     ModusLights has been developing both web and mobile
                     applications with highly responsive user interface coupled
                     with topnotch user experience for a variety of customers for
-                    nearly 8 years. We are constantly pushing the boundaries of
+                    over 10 years. We are constantly pushing the boundaries of
                     what’s possible while designing and creating our solutions.
                     Either the idea is our client’s or our internal projects, we
                     are dedicated to ensuring the idea is transformed into a

@@ -1,13 +1,6 @@
 import React from 'react';
 
-import {
-  Row,
-  Col,
-  Container,
-  Nav,
-  NavItem,
-  NavLink as NavLinkStrap
-} from 'reactstrap';
+import { Row, Col, Container, Nav, NavItem } from 'reactstrap';
 
 import stock1 from '../../assets/images/stock-photos/stock-6.jpg';
 import stock2 from '../../assets/images/stock-photos/stock-7.jpg';
@@ -21,28 +14,28 @@ export default function LivePreviewExample() {
             <h1 className="display-3 text-black mb-2 font-weight-bold">
               Our Values and Culture
             </h1>
-            <p className="font-size-xl mb-0 mb-lg-5 text-black-50">
+            <p className="font-size-xl mb-0 mb-lg-3 text-black-50">
               We pride ourselves on the words of 2 great icons when it comes to
               delivery of quality products and services -
             </p>
             <p>
               <q>
-                <i>
+                <i className="text-black-50">
                   Be a yardstick of quality. Some people aren't used to an
                   environment where excellence is expected.
                 </i>
               </q>
-              - <strong>Steve Jobs</strong>
+              <strong> : Steve Jobs</strong>
             </p>
             <p>
               <q>
-                <i>
+                <i className="text-black-50">
                   There is only one boss. The customer. And he can fire
                   everybody in the company from the chairman on down, simply by
                   spending his money somewhere else.
                 </i>
               </q>
-              - <strong>Sam Walton</strong>
+              <strong> : Sam Walton</strong>
             </p>
           </div>
           <Row className="no-gutters">
@@ -68,16 +61,15 @@ export default function LivePreviewExample() {
                         <p
                           href="#/"
                           onClick={(e) => e.preventDefault()}
-                          className="px-0 py-1 text-white-50">
-                          <strong>- Honesty </strong> - in our
-                          business conduct.
+                          className="px-0 py-1 mb-0 font-size-xl text-white-50">
+                          <strong>- Honesty </strong> - in our business conduct.
                         </p>
                       </NavItem>
                       <NavItem>
                         <p
                           href="#/"
                           onClick={(e) => e.preventDefault()}
-                          className="px-0 py-1 text-white-50">
+                          className="px-0 py-1 mb-0 font-size-xl text-white-50">
                           <strong>- Innovative </strong> - in all our solutions.
                         </p>
                       </NavItem>
@@ -85,7 +77,7 @@ export default function LivePreviewExample() {
                         <p
                           href="#/"
                           onClick={(e) => e.preventDefault()}
-                          className="px-0 py-1 text-white-50">
+                          className="px-0 py-1 mb-0 font-size-xl text-white-50">
                           <strong className="py-1">- Fairness </strong> - in our
                           business dealings
                         </p>
@@ -94,8 +86,8 @@ export default function LivePreviewExample() {
                         <p
                           href="#/"
                           onClick={(e) => e.preventDefault()}
-                          className="px-0 py-1 text-white-50">
-                          <strong>- Servant Leadership </strong> - Serve the
+                          className="px-0 py-1 mb-0 font-size-xl text-white-50">
+                          <strong>- Servant Leadership </strong> - serve the
                           common good.
                         </p>
                       </NavItem>
@@ -103,9 +95,9 @@ export default function LivePreviewExample() {
                         <p
                           href="#/"
                           onClick={(e) => e.preventDefault()}
-                          className="px-0 py-1 text-white-50">
-                          <strong>- Accountable </strong> - Reliable and
-                          responsible to our customers.
+                          className="px-0 py-1 mb-0 font-size-xl text-white-50">
+                          <strong>- Accountable </strong> - reliable and
+                          responsible to our customers and society.
                         </p>
                       </NavItem>
                     </Nav>

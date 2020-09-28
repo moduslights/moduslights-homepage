@@ -50,7 +50,7 @@ export default function LivePreviewExample() {
         <Card className="rounded-sm shadow-none p-3 bg-white-50">
           <Card className="rounded-sm font-size-sm p-4">
             <Row>
-              <Col lg="7" className="d-flex flex-column">
+              <Col md="6" className="d-flex flex-column">
                 <div className="divider-v divider-v-lg d-none d-lg-block" />
                 <div className="py-4">
                   <div className="text-center mb-3">
@@ -129,7 +129,7 @@ export default function LivePreviewExample() {
                 </div>
               </Col>
               <Col
-                lg="5"
+                md="6"
                 className="d-flex align-items-center justify-content-center flex-column">
                 <div className="p-3">
                   <div className="d-block d-xl-flex">
@@ -148,11 +148,11 @@ export default function LivePreviewExample() {
                         Houston TX 77057
                       </p>
                       <p className="mb-0 text-black-50">
-                        <span className="text-black  font-size-lg mb-1">Email: </span>
+                        <span className="text-black font-weight-bold font-size-lg mb-1">Email: </span>
                         support@moduslights.com
                       </p>
                       <p className="mb-0 text-black-50">
-                        <span className="text-black  font-size-lg mb-1">Phone: </span>
+                        <span className="text-black font-weight-bold font-size-lg mb-1">Phone: </span>
                         +1-617-785-5095
                       </p>
                     </div>

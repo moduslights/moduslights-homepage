@@ -3,25 +3,28 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, Container, Nav, NavItem } from 'reactstrap';
 import { NavLink as NavLinkStrap } from 'reactstrap';
-import projectLogo from '../../assets/images/react.svg';
-import logoWithoutNameTransparentBg from '../../assets/images/ModusLightsLogoOnlyTransparentBg.jpg'
+
+import logoWithoutNameTransparentBg from '../../assets/images/ModusLightsLogoOnlyTransparentBg.jpg';
+import { Link } from 'react-scroll';
+import Lifecycle from "react-router/modules/Lifecycle";
 
 export default function LivePreviewExample() {
   return (
     <>
       <div className="bg-second font-size-sm py-5">
         <div className="py-3">
-          <a
-            href="#/"
-            onClick={(e) => e.preventDefault()}
-            title="Bamburgh React Admin Dashboard with Reactstrap PRO"
+          <Link
+            style={{ cursor: 'pointer' }}
+            smooth={true}
+            to="section1"
+            title="Moduslights"
             className="d-70 d-block mx-auto bg-white rounded-circle">
             <img
-              alt="Bamburgh React Admin Dashboard with Reactstrap PRO"
+              alt="Moduslight Logo"
               className="img-fluid p-2"
               src={logoWithoutNameTransparentBg}
             />
-          </a>
+          </Link>
         </div>
         <Container className="pt-5">
           <Row className="pb-3">
@@ -31,21 +34,22 @@ export default function LivePreviewExample() {
                   Services
                 </h6>
                 <Nav className="nav-transparent flex-column">
-                  <NavItem>
-                    <NavLinkStrap
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}
+                  <NavItem style={{ cursor: 'pointer' }}>
+                    <Link
+                      to="section2"
+                      activeClass="active"
+                      smooth={true}
                       className="px-0 py-1 text-white-50">
                       Services
-                    </NavLinkStrap>
+                    </Link>
                   </NavItem>
-                  <NavItem>
-                    <NavLinkStrap
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}
+                  <NavItem style={{ cursor: 'pointer' }}>
+                    <Link
+                      to="section2"
+                      smooth={true}
                       className="px-0 py-1 text-white-50">
-                      About us
-                    </NavLinkStrap>
+                      About Us
+                    </Link>
                   </NavItem>
                 </Nav>
               </div>
@@ -78,7 +82,7 @@ export default function LivePreviewExample() {
             <Col md="6" xl="3">
               <div className="my-4 my-xl-0">
                 <h6 className="text-white font-weight-bold mb-3 text-uppercase">
-                  Applications
+                  Internal App Projects
                 </h6>
                 <Nav className="nav-transparent flex-column">
                   <NavItem>
@@ -86,7 +90,7 @@ export default function LivePreviewExample() {
                       href="#/"
                       onClick={(e) => e.preventDefault()}
                       className="px-0 py-1 text-white-50">
-                      Exchange
+                      SmartQ'
                     </NavLinkStrap>
                   </NavItem>
                   <NavItem>
@@ -94,7 +98,15 @@ export default function LivePreviewExample() {
                       href="#/"
                       onClick={(e) => e.preventDefault()}
                       className="px-0 py-1 text-white-50">
-                      Generic
+                      DeepX
+                    </NavLinkStrap>
+                  </NavItem>
+                  <NavItem>
+                    <NavLinkStrap
+                      href="#/"
+                      onClick={(e) => e.preventDefault()}
+                      className="px-0 py-1 text-white-50">
+                      PingPay
                     </NavLinkStrap>
                   </NavItem>
                 </Nav>
@@ -109,13 +121,35 @@ export default function LivePreviewExample() {
                   Stay up to date with our latest News and products releases!
                 </p>
                 <Nav className="nav-transparent justify-content-start">
+                  {/*<NavItem>*/}
+                  {/*  <NavLinkStrap*/}
+                  {/*    className="px-0 mr-3 text-white-50"*/}
+                  {/*    href="#/"*/}
+                  {/*    onClick={(e) => e.preventDefault()}>*/}
+                  {/*    <FontAwesomeIcon*/}
+                  {/*      icon={['fab', 'facebook']}*/}
+                  {/*      className="font-size-lg"*/}
+                  {/*    />*/}
+                  {/*  </NavLinkStrap>*/}
+                  {/*</NavItem>*/}
+                  {/*<NavItem>*/}
+                  {/*  <NavLinkStrap*/}
+                  {/*    className="px-0 mr-3 text-white-50"*/}
+                  {/*    href="#/"*/}
+                  {/*    onClick={(e) => e.preventDefault()}>*/}
+                  {/*    <FontAwesomeIcon*/}
+                  {/*      icon={['fab', 'twitter']}*/}
+                  {/*      className="font-size-lg"*/}
+                  {/*    />*/}
+                  {/*  </NavLinkStrap>*/}
+                  {/*</NavItem>*/}
                   <NavItem>
                     <NavLinkStrap
                       className="px-0 mr-3 text-white-50"
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}>
+                      href="https://www.linkedin.com/company/moduslights/?viewAsMember=true"
+                      target="_blank">
                       <FontAwesomeIcon
-                        icon={['fab', 'facebook']}
+                        icon={['fab', 'linkedin']}
                         className="font-size-lg"
                       />
                     </NavLinkStrap>
@@ -123,30 +157,8 @@ export default function LivePreviewExample() {
                   <NavItem>
                     <NavLinkStrap
                       className="px-0 mr-3 text-white-50"
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}>
-                      <FontAwesomeIcon
-                        icon={['fab', 'twitter']}
-                        className="font-size-lg"
-                      />
-                    </NavLinkStrap>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinkStrap
-                      className="px-0 mr-3 text-white-50"
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}>
-                      <FontAwesomeIcon
-                        icon={['fab', 'google']}
-                        className="font-size-lg"
-                      />
-                    </NavLinkStrap>
-                  </NavItem>
-                  <NavItem>
-                    <NavLinkStrap
-                      className="px-0 mr-3 text-white-50"
-                      href="#/"
-                      onClick={(e) => e.preventDefault()}>
+                      href="https://www.instagram.com/moduslights/"
+                      target="_blank">
                       <FontAwesomeIcon
                         icon={['fab', 'instagram']}
                         className="font-size-lg"
