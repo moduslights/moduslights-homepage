@@ -1,19 +1,13 @@
 import React from 'react';
 
-import { Row, Col, Card, Container, Badge, Button } from 'reactstrap';
-
-import GaugeChart from 'react-gauge-chart';
-import { NavLink } from 'react-router-dom';
+import { Row, Col, Container } from 'reactstrap';
 
 //import general from '../../assets/images/apps/bamburgh-react-admin-dashboard-reactstrap-pro.jpg';
 import general from '../../assets/images/apps/devComputer.jpg';
 
-
 import hero1 from '../../assets/images/hero-bg/hero-5.jpg';
 
 export default function LivePreviewExample() {
-
-
   return (
     <>
       <div className="hero-wrapper bg-deep-blue bg-composed-wrapper">
@@ -34,11 +28,12 @@ export default function LivePreviewExample() {
                     className="text-white opacity-6 mt-3 mb-5 font-size-xxl"
                     style={{ lineHeight: '1.9', letterSpacing: '1.7' }}>
                     ModusLights has been developing both web and mobile
-                    applications with responsive UIs for a variety of customers
-                    for nearly 8 years. We are constantly pushing the boundaries
-                    of what’s possible while designing and creating our
-                    solutions. Either the idea is ours or our client’s, we are
-                    dedicated to ensuring the idea is transformed into a
+                    applications with highly responsive user interface coupled
+                    with topnotch user experience for a variety of customers for
+                    nearly 8 years. We are constantly pushing the boundaries of
+                    what’s possible while designing and creating our solutions.
+                    Either the idea is our client’s or our internal projects, we
+                    are dedicated to ensuring the idea is transformed into a
                     beautifully designed, user friendly and engaging solution of
                     a superior quality.
                   </p>
@@ -59,27 +54,6 @@ export default function LivePreviewExample() {
                 <Col md="6">
                   <Row className="w-100 mb-3 mb-xl-0">
                     <Col md="12" xl="12">
-                      <div className="feature-box pr-4 text-white">
-                        <h3 className="font-size-lg font-weight-bold my-3 text-white opacity-6">
-                          <a
-                            href="#/"
-                            onClick={(e) => e.preventDefault()}
-                            title=""
-                            className="text-first">
-                            ...
-                          </a>
-                        </h3>
-                        <p
-                          className="text-white opacity-6 mb-3 font-size-lg"
-                          style={{ lineHeight: '1.9', letterSpacing: '1.7' }}>
-                          ModusLights has handled strategy, concept, design and
-                          development for dozens of clients, building
-                          application to help drive their businesses and needs
-                          across different platforms, both web and mobile.
-                        </p>
-                      </div>
-                    </Col>
-                    <Col md="12" xl="12">
                       <div className="feature-box pr-4">
                         <h3 className="font-size-lg font-weight-bold my-3 opacity-6">
                           <a
@@ -94,10 +68,11 @@ export default function LivePreviewExample() {
                           className="text-white opacity-6 mb-3 font-size-lg"
                           style={{ lineHeight: '1.9', letterSpacing: '1.7' }}>
                           Our team has years of experience working with Fortune
-                          500 companies and we are very obsessed with R&D, this
-                          helps us stays ahead of the technology curve, as such
-                          ensuring we are using the latest technology to drive
-                          the different solutions we bring to our customers.
+                          100 - 500 companies and we are very obsessed with R&D.
+                          This helps us stay ahead of the technology curve, as
+                          such ensuring we are using the latest technology to
+                          drive the different solutions we bring to our
+                          customers.
                         </p>
                       </div>
                     </Col>

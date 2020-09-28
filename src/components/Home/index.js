@@ -39,16 +39,6 @@ export default function LivePreviewExample() {
                   We build scalable and reliable applications to support both individuals and business enterprise
                 </p>
                 <div className="py-4 mb-4">
-                  <Button
-                    tag={NavLink}
-                    to="/DashboardCommerce"
-                    size="lg"
-                    className="btn-pill shadow-second-sm"
-                    color="first">
-                    <span className="btn-wrapper--label">
-                      Learn More
-                    </span>
-                  </Button>
                 </div>
               </Col>
             </Container>

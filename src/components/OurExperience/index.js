@@ -47,7 +47,8 @@ export default function LivePreviewExample() {
             Our Experiences
           </h1>
           <p className="font-size-xl mb-0 mb-lg-5 text-black-50">
-            Our team members has executed for top companies around the world.
+            Our team members have experience executing for top companies around
+            the world and many more.
           </p>
         </div>
         <Services />

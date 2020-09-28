@@ -47,7 +47,7 @@ export default function LivePreviewExample() {
             Our Services
           </h1>
           <p className="font-size-xl mb-0 mb-lg-5 text-black-50">
-            At ModusLights, we offer a wide range of both business and technology solutions to our clients. Some of our core competencies includes the below to to mention a few.
+            At ModusLights, we offer a wide range of both business and technology solutions to our clients. Some of our core competencies includes the below to mention a few.
           </p>
         </div>
         <Services />
