@@ -5,7 +5,7 @@ import { Row, Col, Container } from 'reactstrap';
 //import general from '../../assets/images/apps/bamburgh-react-admin-dashboard-reactstrap-pro.jpg';
 import general from '../../assets/images/apps/devComputer.jpg';
 
-import hero1 from '../../assets/images/hero-bg/hero-5.jpg';
+import hero1 from '../../assets/images/hero-bg/dev.jpg';
 
 export default function LivePreviewExample() {
   return (
