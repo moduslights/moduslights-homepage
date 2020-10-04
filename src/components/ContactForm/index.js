@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import axios from "axios"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Row, Col, Card, Container, Button, Alert } from 'reactstrap';
 
@@ -14,6 +14,33 @@ export default function LivePreviewExample() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [userIp, setUserIp] = useState('');
+
+  const url = `http://moduslights.com.ng/api/message`;
+
+  useEffect(() => {
+    axios.get('https://api.ipify.org?format=json').then((res) => {
+      console.log(res.data['ip']);
+      setUserIp(res.data['ip']);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!isEmpty(userIp)) {
+      axios
+        .post(url, {
+          name: 'Moduslights Page',
+          email: 'page@visit.com',
+          message: `Someone from the ip Location: ${userIp} visited Moduslights Home Page`,
+          phone: userIp
+        })
+        .then((res) => {
+          console.log(res.data);
+          setUserIp("");
+        });
+    }
+    console.log('Page Visited');
+  }, [userIp]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -41,8 +68,6 @@ export default function LivePreviewExample() {
       setSendMessageError(false);
     }
   };
-
-
 
   return (
     <>
@@ -144,15 +169,18 @@ export default function LivePreviewExample() {
                         Address
                       </div>
                       <p className="mb-0 text-black-50">
-                        2401 Fountain View Dr. Ste 461 #2023
-                        Houston TX 77057
+                        2401 Fountain View Dr. Ste 461 #2023 Houston TX 77057
                       </p>
                       <p className="mb-0 text-black-50">
-                        <span className="text-black font-weight-bold font-size-lg mb-1">Email: </span>
+                        <span className="text-black font-weight-bold font-size-lg mb-1">
+                          Email:{' '}
+                        </span>
                         support@moduslights.com
                       </p>
                       <p className="mb-0 text-black-50">
-                        <span className="text-black font-weight-bold font-size-lg mb-1">Phone: </span>
+                        <span className="text-black font-weight-bold font-size-lg mb-1">
+                          Phone:{' '}
+                        </span>
                         +1-617-785-5095
                       </p>
                     </div>
