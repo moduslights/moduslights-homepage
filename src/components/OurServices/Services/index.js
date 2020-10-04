@@ -142,8 +142,10 @@ export default function LivePreviewExample() {
                     </div>
                   </a>
                   <p className="mb-0 text-second opacity-7">
-                    Our internal team is currently working on a huge IoT project targeted to for organizations with inventory and measurement needs.
-                    We are also able to take on projects in this space for our customers.
+                    Our internal team is currently working on a huge IoT project
+                    (Hardware and Software) targeted towards organizations with
+                    inventory and measurement needs. We are also able to take on
+                    projects in this space for our customers.
                   </p>
                 </div>
               </div>
