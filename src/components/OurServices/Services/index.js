@@ -83,8 +83,8 @@ export default function LivePreviewExample() {
                   <p className="mb-0 text-second opacity-7">
                     We offer consulting services in the following areas: IT
                     Service Management (ITSM) / Information Technology
-                    Infrastructural Library (ITIL), Agile / Scrum Methodologies
-                    Quality Assurance (QA) Security
+                    Infrastructural Library (ITIL), Agile / Scrum Methodology,
+                    Quality Assurance (QA), Security.
                   </p>
                 </div>
               </div>
@@ -130,10 +130,7 @@ export default function LivePreviewExample() {
                     href="#/"
                     onClick={(e) => e.preventDefault()}
                     className="font-weight-bold d-flex align-items-center mb-2 d-flex">
-                    <div className="font-size-lg">
-                      {' '}
-                      Internet of Things (IoT){' '}
-                    </div>
+                    <div className="font-size-lg">Internet of Things (IoT)</div>
                     <div className="d-30 rounded-pill btn-icon bg-neutral-success font-size-xs text-success ml-2">
                       <FontAwesomeIcon
                         icon={['fas', 'check']}
